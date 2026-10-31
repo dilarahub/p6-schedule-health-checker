@@ -1,0 +1,37 @@
+# Python build and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files and logs
+*.log
+*.tmp
+*.bak
+~$*
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Project data: allow only the explicitly synthetic data directory
+/data/*
+!/data/synthetic/
+
+# Do not accidentally track live Primavera P6 exports
+*.xer
+!data/synthetic/**/*.xer
